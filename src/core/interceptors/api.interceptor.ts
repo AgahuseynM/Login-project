@@ -11,6 +11,7 @@ export class ApiInterceptor extends RequestInterceptor {
 
     request() {
         this.intercept().use((req) => {
+            console.log(req)
             req.headers = {
                 ...req.headers,
             }
@@ -27,6 +28,7 @@ export class ApiInterceptorResponse extends ResponseInterceptor {
 
     response() {
         this.interceptor().use((res) => {
+            console.log(res)
             return res;
         }, (error) => {
             return Promise.reject(error);

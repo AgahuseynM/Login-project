@@ -17,17 +17,17 @@
         <h1>About</h1>
       </div>
       <div class="about-container__content mb-2">
-        <div class="content-elements pb-4" v-for="(item, index) in arrayTest" :key="index">
+        <div class="content-elements pb-4" v-for="(item, index) in aboutListAll" :key="index">
           <div class="item mb-3 p-2">
             <div>
               <v-alert class="v-alert" color="emerald"><strong>Language: </strong>
-                {{item.language}}
+                {{item.abouts}}
               </v-alert>
               <v-alert class="v-alert" color="emerald"><strong>Type: </strong>
-                {{item.type}}
+                {{}}
               </v-alert>
               <v-alert class="v-alert" color="emerald"><strong>Pages: </strong>
-                {{item.pages}}
+                {{}}
               </v-alert>
             </div>
             <div @click="deleteItem(index)" class="delete-btn pr-5">

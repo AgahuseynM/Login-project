@@ -1,15 +1,34 @@
+import 'reflect-metadata'
 import {Options, Vue} from "vue-class-component";
+import {container} from "tsyringe";
+import {AboutSandbox} from "@/pages/about/sandbox/about.sandbox";
+import {AboutList} from "@/pages/about/types/about";
+import {store} from "@/store";
 
 @Options({
     name: 'AboutComponent'
 })
+
 export default class AboutComponent extends Vue {
+    private store = store;
+    private sandbox: AboutSandbox = container.resolve(AboutSandbox);
+    private aboutList: AboutList[] = []
 
     public addInfo = {
         language: '',
         type: '',
         pages: ''
     }
+
+    get aboutListAll() {
+        return this.store.getters.getAboutList;
+    }
+
+    created() {
+        this.sandbox.getItemAboutList()
+    }
+
+
 
     public arrayTest = [
         {
@@ -46,5 +65,8 @@ export default class AboutComponent extends Vue {
             pages: this.addInfo.pages
         }
         this.arrayTest.unshift(newPost)
+        this.addInfo.language = ''
+        this.addInfo.type = ''
+        this.addInfo.pages = ''
     }
 }
