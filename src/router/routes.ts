@@ -24,11 +24,6 @@ const routes: Array<RouteRecordRaw> = [
         name: 'about',
         component: () => import('../pages/about/about.component.vue')
     },
-    {
-        path: '/about/create-about',
-        name: 'create-about',
-        component: () => import('../pages/create-about/create-about.vue')
-    }
 ];
 
 export default routes;
