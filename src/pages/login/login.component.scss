@@ -1,0 +1,36 @@
+@import "~@/assets/styles/abstracts";
+
+
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .login-container {
+    margin: 0 auto;
+    border-radius: rem(15);
+    border: 1px solid $login-border-color;
+    background-color: $white;
+    width: rem(450);
+    height: rem(400);
+
+    &__title {
+      text-align: center;
+      color: $login-title-color
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+    &__btns {
+      display: flex;
+      justify-content: space-between;
+
+      .btn {
+        width: 47%;
+      }
+    }
+  }
+}

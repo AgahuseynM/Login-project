@@ -1,0 +1,45 @@
+{
+  "name": "login-project",
+  "version": "0.1.7",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "serve-prod": "vue-cli-service serve --mode production",
+    "build": "vue-cli-service build",
+    "build-prod": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "^3.0.0-4",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "light-grid": "^1.1.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.7",
+    "sass": "^1.42.1",
+    "tsyringe": "^4.6.0",
+    "vue": "^3.0.0",
+    "vue-class-component": "^8.0.0-0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0",
+    "vuex-observable-plugin": "^0.3.1",
+    "vuex-persistedstate": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "~4.1.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

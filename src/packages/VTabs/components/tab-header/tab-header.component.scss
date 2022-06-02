@@ -1,0 +1,33 @@
+@import "@/assets/styles/abstracts";
+
+
+.tabs{
+  &__header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid $login-border-color;
+    &-items{
+      word-break: break-word;
+      font-family: $font-medium;
+      color: black;
+      list-style-type: none;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      &:after{
+        display:block;
+        content: '';
+        border-bottom: solid 2px $input-border-focus-color;
+        transform: scaleX(0);
+        @include transition(transform,0.25s,ease-in-out);
+      }
+      &.avtiveItem{
+        color: $input-border-focus-color;
+      }
+      &.avtiveItem:after{
+        transform: scaleX(1);
+      }
+    }
+  }
+}

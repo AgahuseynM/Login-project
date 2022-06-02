@@ -1,0 +1,89 @@
+@import '@/assets/styles/abstracts';
+
+.toast {
+  display: flex;
+  max-width: rem(350);
+  min-width: rem(350);
+  position: fixed;
+  right: rem(30);
+  bottom: rem(30);
+  border-radius: $border-radius;
+
+  &--default {
+    background: $toast-default-color;
+    color: $button-text-color !important;
+    box-shadow: 0 10px 20px -10px $toast-default-color;
+  }
+
+  &--primary {
+    color: $button-text-color !important;
+    background-color: $primary-button-color !important;
+    box-shadow: 0 10px 20px -10px $primary-button-color;
+  }
+
+  &--info {
+    color: $button-text-color !important;
+    background-color: $info-button-color;
+    border-color: $info-button-color;
+    box-shadow: 0 10px 20px -10px $info-button-color;
+  }
+
+  &--success {
+    color: $button-text-color !important;
+    background-color: $success-button-color;
+    border-color: $success-button-color;
+    box-shadow: 0 10px 20px -10px $success-button-color;
+  }
+
+  &--warning {
+    color: $button-text-color !important;
+    background-color: $warning-button-color;
+    border-color: $warning-button-color;
+    box-shadow: 0 10px 20px -10px $warning-button-color;
+  }
+
+  &--danger {
+    color: $button-text-color !important;
+    background-color: $danger-button-color;
+    border-color: $danger-button-color;
+    box-shadow: 0 10px 20px -10px $danger-button-color;
+  }
+
+  &--secondary {
+    color: $button-text-color !important;
+    background-color: $secondary-button-color;
+    border-color: $secondary-button-color;
+    box-shadow: 0 10px 20px -10px $secondary-button-color;
+  }
+
+  &--dark {
+    color: $button-text-color !important;
+    background-color: $dark-button-color;
+    border-color: $dark-button-color;
+    box-shadow: 0 10px 20px -10px $dark-button-color;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: rem(16);
+    font-family: $font-light, serif;
+  }
+
+  &__action {
+    cursor: pointer;
+    font-size: rem(30);
+    font-family: $font-light, serif;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: rem(10);
+    font-weight: 900;
+  }
+}
+
+
+

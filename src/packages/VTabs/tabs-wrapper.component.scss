@@ -1,0 +1,24 @@
+@import "@/assets/styles/abstracts";
+// TODO: [x] (Fidan) transition üçün mixin istifadə et
+
+.tabs-wrapper{
+  display: flex;
+  flex-direction: column;
+  box-shadow: rem(0) rem(30) rem(82) rgba(0, 0, 0, 0.05);
+  background-color: white;
+  &__content{
+    position: relative;
+    max-height: rem(400);
+    min-height: rem(400);
+  }
+}
+.active{
+  display: none;
+}
+.passive{
+  display: block;
+}
+
+
+
+

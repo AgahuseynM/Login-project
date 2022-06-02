@@ -1,0 +1,11 @@
+@import "@/assets/styles/abstracts";
+
+.public {
+  &__content {
+    margin-left: rem($left-menu-size);
+    @include transition;
+    &--full {
+      margin-left: 0;
+    }
+  }
+}

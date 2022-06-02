@@ -1,0 +1,28 @@
+@import "~@/assets/styles/abstracts";
+
+.register {
+  outline: 1px black solid;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .register-container {
+    margin: 0 auto;
+    border-radius: rem(15);
+    border: 1px solid $login-border-color;
+    background-color: $white;
+    width: rem(450);
+    height: rem(500);
+
+    &__title {
+      text-align: center;
+      color: $login-title-color
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

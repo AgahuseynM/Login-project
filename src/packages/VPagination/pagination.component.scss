@@ -1,0 +1,130 @@
+@import "@/assets/styles/abstracts";
+
+.pagination-section {
+  display: flex;
+  justify-content: center;
+
+  &__page {
+    display: inline-block;
+    .page-item {
+      position: relative;
+      background-color: $login-border-color;
+      display: inline-block;
+      cursor: pointer;
+      .page-link {
+        color: $pagination-color;
+        text-decoration: none;
+      }
+
+      &.first {
+        margin-right: rem(20);
+        &::after {
+          content: "...";
+          margin-left: rem(4);
+          position: absolute;
+          right: rem(-15);
+        }
+        &:hover {
+          background-color: $gradient-blue;
+          border-radius: rem(20) 0 0 rem(20);
+          a{
+            color: white;
+          }
+        }
+        border-radius: rem(20) 0 0 rem(20);
+      }
+
+      &.last {
+        margin-left: rem(20);
+        &::before {
+          content: "...";
+          margin-right: rem(4);
+          position: absolute;
+          left: rem(-15);
+        }
+
+        &:hover {
+          background-color: $gradient-blue;
+          border-radius: 0 rem(20) rem(20) 0;
+          a{
+            color: white;
+          }
+        }
+        border-radius: 0 rem(20) rem(20) 0;
+      }
+      &.active {
+        background-color: $gradient-blue;
+        border-radius: rem(5);
+        a{
+          color: white;
+        }
+      }
+      &:hover {
+        background-color: $gradient-blue;
+        border-radius: rem(5);
+        a{
+          color: white;
+        }
+      }
+    }
+
+    .item-page{
+      &:first-of-type{
+        border-radius: rem(20) 0px 0px rem(20);
+      }
+    }
+
+    .item-page{
+      &:last-child{
+        border-radius: 0px rem(20) rem(20) 0px;
+      }
+    }
+
+  }
+
+  &__previos{
+    background-color: $login-border-color;
+    cursor: pointer;
+    border-radius: 50%;
+    .page-link{
+      text-decoration: none;
+      svg{
+        color: $pagination-color;
+      }
+    }
+    &:hover{
+      background-color: $gradient-blue;
+      border-radius: 50%;
+      color: white;
+      .page-link{
+        text-decoration: none;
+        svg{
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__next{
+    background-color: $login-border-color;
+    cursor: pointer;
+    border-radius: 50%;
+    color: $login-border-color;
+    .page-link{
+      text-decoration: none;
+      svg{
+        color: $pagination-color;
+      }
+    }
+    &:hover{
+      background-color: $gradient-blue;
+      border-radius: 50%;
+      .page-link{
+        text-decoration: none;
+        svg{
+          color: white;
+        }
+      }
+    }
+  }
+}

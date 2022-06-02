@@ -1,0 +1,28 @@
+@import '@/assets/styles/abstracts';
+.modal {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(12) rem(26);
+    border-bottom: 1px solid $modal-border;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: rem(20);
+    letter-spacing: 1px;
+    color: $modal-title;
+    margin: 0;
+    padding: 0;
+  }
+  &__close {
+    float: right;
+    font-size:rem(24);
+    font-weight: 700;
+    line-height: 1;
+    color: $black;
+    opacity: .5;
+    border: none;
+    background-color: $white;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,100 @@
+@import '@/assets/styles/abstracts';
+
+.btn {
+  padding: rem(7) rem(20);
+  text-shadow: none;
+  font-size: rem(14);
+  color: $main-button-text-color;
+  cursor: pointer;
+  background-color: $button-color;
+  will-change: opacity, transform;
+  border-radius: $border-radius;
+  outline: none;
+  border: none;
+  @include transition(all, 0.3s, ease-out);
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &--primary {
+    color: $button-text-color !important;
+    background-color: $primary-button-color !important;
+    border-color: $primary-button-color;
+    box-shadow: 0 10px 20px -10px $primary-button-color;
+  }
+
+  &--info {
+    color: $button-text-color !important;
+    background-color: $info-button-color;
+    border-color: $info-button-color;
+    box-shadow: 0 10px 20px -10px $info-button-color;
+  }
+
+  &--success {
+    color: $button-text-color !important;
+    background-color: $success-button-color;
+    border-color: $success-button-color;
+    box-shadow: 0 10px 20px -10px $success-button-color;
+  }
+
+  &--warning {
+    color: $button-text-color !important;
+    background-color: $warning-button-color;
+    border-color: $warning-button-color;
+    box-shadow: 0 10px 20px -10px $warning-button-color;
+  }
+
+  &--danger {
+    color: $button-text-color !important;
+    background-color: $danger-button-color;
+    border-color: $danger-button-color;
+    box-shadow: 0 10px 20px -10px $danger-button-color;
+  }
+
+  &--secondary {
+    color: $button-text-color !important;
+    background-color: $secondary-button-color;
+    border-color: $secondary-button-color;
+    box-shadow: 0 10px 20px -10px $secondary-button-color;
+  }
+
+  &--dark {
+    color: $button-text-color !important;
+    background-color: $dark-button-color;
+    border-color: $dark-button-color;
+    box-shadow: 0 10px 20px -10px $dark-button-color;
+  }
+
+  &--emerald {
+    color: $button-text-color !important;
+    background-color: $emerald-button-color;
+    border-color: $emerald-button-color;
+    box-shadow: 0 10px 20px -10px $emerald-button-color;
+  }
+
+  &--pear {
+    color: $button-text-color !important;
+    background-color: $pear-button-color;
+    border-color: $pear-button-color;
+    box-shadow: 0 10px 20px -10px $pear-button-color;
+  }
+
+  &--rounded {
+    border-radius: rem(50) !important;
+  }
+
+  &--rounded-circle {
+    height: rem(40);
+    width: rem(40);
+    padding: rem(8) rem(8);
+  }
+
+  &--size-sm {
+    font-size: rem(11);
+  }
+
+  &--size-lg {
+    font-size: rem(16);;
+  }
+}
